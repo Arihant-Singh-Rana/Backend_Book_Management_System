@@ -9,7 +9,6 @@ This project is a simple book management system built with Node.js, Express.js, 
 This file contains controller functions for handling HTTP requests related to books. The `AddData` function adds book details to the database, while the `ReadData` function retrieves all book details.
 
 ```javascript
-// Function to add book details to the database
 const AddData = async (req, res) => {
   // Retrieve book details from request body
   const Details = req.body;
@@ -81,9 +80,6 @@ app.listen(process.env.PORT, () =>
   console.log("Successfully started on port ", process.env.PORT)
 );
 ```
-
-These snippets provide a clear overview of the functionality of each file and how they contribute to the book management system.
-
 ## Conclusion
 
 The Book Management System is a simple yet efficient application for managing book details. By leveraging Node.js, Express.js, and MongoDB, it provides a robust API for adding and retrieving book information. With its modular structure and clear separation of concerns, it is easy to maintain and extend. Whether you're a book enthusiast looking to organize your collection or a developer seeking to learn and build upon a practical project, this system offers a solid foundation. Get started today and streamline your book management process with ease!
