@@ -10,8 +10,8 @@ This file contains controller functions for handling HTTP requests related to bo
 
 ```javascript
 const AddData = async (req, res) => {
-  // Retrieve book details from request body
-  const Details = req.body;
+  try {
+    const Details = req.body;
   // Add book details to the database
   const addedDetails = await BooksDetailsSchema.create(Details);
   // Send success response with added details
